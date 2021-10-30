@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/link') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <div class='container-fluid header_menu'>
+        <table>
+            <tr>
+                <th style="padding: 15px;text-align: center;font-size: 15px;">User Id</th>
+                <th style="padding: 15px;text-align: center;font-size: 15px;">Name</th>
+                <th style="padding: 15px;text-align: center;font-size: 15px;">Email</th>
+                <th style="padding: 15px;text-align: center;font-size: 15px;">Password</th>
+            </tr>
+ 
+            <% user.forEach(function(user){ %>
+                <tr>
+                    <td style="padding: 15px;font-size: 12px;"><%= user._id %></td>
+                    <td style="padding: 15px;font-size: 12px;"><%= user.username %></td>
+                    <td style="padding: 15px;font-size: 12px;"><%= user.email %></td>
+                    <td style="padding: 15px;font-size: 12px;"><%= user.password %></td>
+                </tr> 
+            <% }) %> 
+
+
+        </table>
+    </div>
+
+    <!-- footer -->
+
+    <%- include('partials/footer') %>
+</body>
+</html>

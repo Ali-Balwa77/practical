@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg: #375266;
+    --main-color: #055291;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+html{
+    font-size: 62.5%;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: #009ad8;
+}
+.navbar-toggler{
+    background-color: gray;
+}
+.far{
+    color: var(--main-color);
+    animation: rot 2s linear infinite;
+}                                    
+
+/* raegistration */
+.mid{
+    padding:120px 0 80px 0;
+    font-size: 15px;
+}
+.card-header{
+    font-size: 20px;
+    background-color: var(--main-bg);
+    color: #fff;
+}
+.btn{
+    font-size: 15px;
+    border-radius: 5px;
+}
+.card{
+    border-radius: 5px;
+}
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.form-control{
+    font-size: 13px;
+}
+p{
+    padding-top: 15px;
+}
+.buton{
+    padding-top: 5px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    text-transform: capitalize;
+}
+
+
